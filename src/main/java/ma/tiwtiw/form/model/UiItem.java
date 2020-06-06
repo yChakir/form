@@ -17,65 +17,80 @@ public class UiItem implements RenderSchema, HorizontalLayoutSchema, I18NSchema,
    * Custom error message text, key name agrees with `ErrorData.keyword` value
    */
   List<Pair<String, String>> errors;
+
   /**
    * Widget name
    */
   private String widget;
+
   /**
    * Custom class, equivalent to `[ngClass]` value
    */
   private List<String> clazz;
+
   /**
    * Element component size
    */
   private SizeEnum size;
+
   /**
    * Specify the width, unit: `px`
    */
   private Long width;
+
   /**
    * Responsive properties
    */
   private GridSchema grid;
+
   /**
    * Label optional information
    */
   private String optional;
+
   /**
    * Optional help for tags, use `nz-tooltip` to show
    */
   private OptionalHelp optionalHelp;
+
   /**
    * `label` grid placeholders, default: `5` - `0` is equivalent to `display: none` - Limited to
    * horizontal layout
    */
   private Long spanLabel;
+
   /**
    * `control` grid placeholders, default: `19` - `0` is equivalent to `display: none` - Limited to
    * horizontal layout
    */
   private Long spanControl;
+
   /**
    * `control` The number of grid spaces on the left side of the grid. - Limited to horizontal
    * layout
    */
   private Long offsetControl;
+
   /**
    * `label` fixed width - Limited to horizontal layout
    */
   private Long spanLabelFixed;
+
   /**
    * Refers to the international key value of `schema.title`
    */
   private String i18n;
+
   /**
    * Corresponding to `schema.description` internationalization
    */
   private String descriptionI18n;
+
   /**
    * If realtime validation
    */
   private Boolean liveValidate = Boolean.TRUE;
+
   /**
    * If show visual error immediately
    */
