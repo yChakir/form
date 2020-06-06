@@ -1,5 +1,5 @@
 package ma.tiwtiw.form.model;
 
-public enum SchemaItemType {
+public enum SchemaItemTypeEnum {
   NUMBER, INTEGER, STRING, BOOLEAN, OBJECT, ARRAY
 }

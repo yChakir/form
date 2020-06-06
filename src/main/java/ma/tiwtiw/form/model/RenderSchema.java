@@ -2,7 +2,7 @@ package ma.tiwtiw.form.model;
 
 import java.util.List;
 
-interface RenderSchema {
+public interface RenderSchema {
 
   String getWidget();
 

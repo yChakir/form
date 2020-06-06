@@ -2,49 +2,59 @@ package ma.tiwtiw.form.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Builder.Default;
+import lombok.Data;
+import lombok.NonNull;
 
+@Data
+@Builder
+@NonNull
+@AllArgsConstructor
 public class SchemaItemEnumType {
-  // [key: string]: any;
 
   /**
-   * 是否禁用状态
+   * Disabled
    */
   private Boolean disabled;
 
   /**
-   * 文本
+   * Label
    */
   private String label;
 
   /**
-   * 文本
+   * Title
    */
   private String title;
 
   /**
-   * 值
+   * Value
    */
   private Object value;
 
   /**
-   * 主键，适用部分小部件数据键名，例如：`tree-select`
+   * Primary key, applicable to some widget data key names, for example: `tree-select`
    */
   private String key;
 
   /**
-   * 是否选中
+   * Whether selected
    */
   private Boolean checked;
 
   /**
-   * 组名，适用部分允许组列表的小部件，例如：`select` - 组对应的文本为 `label` - `children` 为子项
+   * Group name, applicable part of widgets that allow group list, for example: `select`-the text
+   * corresponding to the group is `label`-`children` is a child
    */
   private Boolean group;
 
   private Boolean isLeaf;
 
   /**
-   * 组对应的子类
+   * Subclass corresponding to the group
    */
+  @Default
   private List<SchemaItemEnumType> children = new ArrayList<>();
 }

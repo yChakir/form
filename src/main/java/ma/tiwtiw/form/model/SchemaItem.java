@@ -19,7 +19,7 @@ public class SchemaItem {
    * Data type, support JavaScript basic types
    */
   @Default
-  private SchemaItemType type = SchemaItemType.STRING;
+  private SchemaItemTypeEnum type = SchemaItemTypeEnum.STRING;
 
   /**
    * Enum, static data source
