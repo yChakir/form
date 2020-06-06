@@ -1,7 +1,7 @@
-package ma.tiwtiw.form.aspect.controller;
+package ma.tiwtiw.form.controller;
 
 import ma.tiwtiw.core.controller.impl.BaseRestController;
-import ma.tiwtiw.form.aspect.dto.FormDto;
+import ma.tiwtiw.form.dto.FormDto;
 import ma.tiwtiw.form.model.Form;
 import ma.tiwtiw.form.service.FormService;
 import org.modelmapper.ModelMapper;

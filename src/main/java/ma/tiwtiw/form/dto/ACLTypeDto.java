@@ -1,10 +1,8 @@
-package ma.tiwtiw.form.aspect.dto;
+package ma.tiwtiw.form.dto;
 
 import java.util.List;
-import javafx.util.Pair;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,8 +10,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class SchemaDto {
+public class ACLTypeDto {
 
-  @Default
-  List<Pair<String, SchemaItemDto>> items;
+  private List<String> role;
+
+  private List<String> ability;
+
+  private String mode;
+
+  private Boolean except;
 }

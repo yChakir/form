@@ -1,4 +1,4 @@
-package ma.tiwtiw.form.aspect.dto;
+package ma.tiwtiw.form.dto;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
