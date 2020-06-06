@@ -1,0 +1,8 @@
+server:
+  port: 5050
+
+logging:
+  level:
+    org.springframework.web: INFO
+    ma.tiwtiw: DEBUG
+  file: ./log/application.log
