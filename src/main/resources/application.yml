@@ -4,5 +4,6 @@ server:
 logging:
   level:
     org.springframework.web: INFO
+    org.springframework.data.mongodb.core.index: OFF
     ma.tiwtiw: DEBUG
   file: ./log/application.log
