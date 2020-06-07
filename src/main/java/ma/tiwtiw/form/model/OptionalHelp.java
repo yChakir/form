@@ -1,10 +1,10 @@
 package ma.tiwtiw.form.model;
 
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.javatuples.Pair;
 
 @Data
 @Builder
@@ -28,5 +28,5 @@ public class OptionalHelp {
 
   private String overlayClassName;
 
-  private Pair<String, String> overlayStyle;
+  private Map<String, String> overlayStyle;
 }

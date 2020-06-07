@@ -1,9 +1,10 @@
 package ma.tiwtiw.form.model;
 
 import java.util.List;
-import javafx.util.Pair;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Builder.Default;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -16,7 +17,7 @@ public class UiItem implements RenderSchema, HorizontalLayoutSchema, I18NSchema,
   /**
    * Custom error message text, key name agrees with `ErrorData.keyword` value
    */
-  List<Pair<String, String>> errors;
+  Map<String, String> errors;
 
   /**
    * Widget name
@@ -89,11 +90,13 @@ public class UiItem implements RenderSchema, HorizontalLayoutSchema, I18NSchema,
   /**
    * If realtime validation
    */
+  @Default
   private Boolean liveValidate = Boolean.TRUE;
 
   /**
    * If show visual error immediately
    */
+  @Default
   private Boolean firstVisual = Boolean.FALSE;
 
   /**
@@ -110,6 +113,7 @@ public class UiItem implements RenderSchema, HorizontalLayoutSchema, I18NSchema,
    * Whether it is mandatory to display `*` on the label to indicate that it is required. Generally,
    * when using a custom check, `validator` may require required items to be processed
    */
+  @Default
   private Boolean showRequired = Boolean.TRUE;
 
   /**

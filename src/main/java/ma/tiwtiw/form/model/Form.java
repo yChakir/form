@@ -1,9 +1,12 @@
 package ma.tiwtiw.form.model;
 
+import java.util.HashMap;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Builder.Default;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import ma.tiwtiw.core.model.BaseModel;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -13,6 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 public class Form extends BaseModel<String> {
 
   /**
@@ -29,7 +33,8 @@ public class Form extends BaseModel<String> {
   /**
    * UI Schema
    */
-  private Ui ui;
+  @Default
+  Map<String, UiItem> ui = new HashMap<>();
 
   /**
    * Default form values

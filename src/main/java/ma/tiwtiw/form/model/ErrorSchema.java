@@ -1,13 +1,13 @@
 package ma.tiwtiw.form.model;
 
 import java.util.List;
-import javafx.util.Pair;
+import java.util.Map;
 
 public interface ErrorSchema {
 
-  List<Pair<String, String>> getErrors();
+  Map<String, String> getErrors();
 
-  void setErrors(List<Pair<String, String>> errors);
+  void setErrors(Map<String, String> errors);
 
   Boolean getLiveValidate();
 

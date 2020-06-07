@@ -2,7 +2,7 @@ package ma.tiwtiw.form.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
-import javafx.util.Pair;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UiItemDto {
 
-  List<Pair<String, String>> errors;
+  Map<String, String> errors;
 
   private String widget;
 

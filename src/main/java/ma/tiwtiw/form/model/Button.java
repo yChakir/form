@@ -38,6 +38,7 @@ public class Button {
   /**
    * Reset type of button
    */
+  @Default
   private String resetType = "default";
 
   /**
